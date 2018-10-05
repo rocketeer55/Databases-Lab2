@@ -13,6 +13,9 @@ for line in input_file:
         # If this is the first line, skip it
         first_line = False
         continue
+    if (not line.strip()):
+        # If the line is blank, skip it
+        continue
     output_file.write("INSERT INTO %s VALUES(%s);\n" % (sys.argv[2], line.rstrip()))
 
 input_file.close()

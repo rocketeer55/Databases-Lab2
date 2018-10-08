@@ -1,3 +1,7 @@
+-- Jack Goyette, Spencer Schurk
+-- jgoyette@calpoly.edu, sschurk@calpoly.edu
+
+
 CREATE TABLE CAMPUSES (
     ID INT PRIMARY KEY,
     CAMPUS CHAR(60),
